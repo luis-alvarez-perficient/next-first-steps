@@ -1,0 +1,10 @@
+@reference "tailwindcss";
+
+.link {
+  @apply hover:underline hover:text-blue-400 mr-2 transition-all;
+}
+
+.active-link {
+  @apply text-blue-600 font-bold  hover:text-blue-600 bg-white rounded px-2 py-1;
+  @apply transition-all;
+}
