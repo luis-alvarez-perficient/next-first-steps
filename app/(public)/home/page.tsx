@@ -1,7 +1,22 @@
-export default function Home() {
+export const metadata = {
+  title: "Home Page",
+  description: "Esta es la página de home.",
+  keywords: ["Next.js", "SEO", "Home Page"],
+  authors: [
+    {
+      name: "Luis Felipe Alvarez",
+      url: "https://example.com",
+    },
+  ],
+};
+
+export default function HomePage() {
   return (
-    <main className="flex flex-col row-start-2 items-center justify-between p-24">
-      <span className="text-5xl">Hola mundo!!</span>
-    </main>
+    <>
+      <span className="text-5xl">Home Page</span>
+      <p className="mt-4 text-lg">
+        This is the home page of our Next.js application.
+      </p>
+    </>
   );
 }
